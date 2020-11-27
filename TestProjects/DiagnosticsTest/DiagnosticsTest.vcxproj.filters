@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UUT">
+      <UniqueIdentifier>{24eab6a9-910c-4ee7-a7a6-de0fc3f801fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fakes">
+      <UniqueIdentifier>{2e36667a-1386-41c0-a82f-8c4e62c9840b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\SourceFiles">
+      <UniqueIdentifier>{3cfa3a8c-043e-4574-8921-dacf8da0903c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\HeaderFiles">
+      <UniqueIdentifier>{9fb27aed-6a2e-43a5-b9bd-5b3cf26548be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles">
+      <UniqueIdentifier>{a7877068-3faf-4adb-8ad8-c84dbcd3938c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\SourceFiles">
+      <UniqueIdentifier>{9a5c9646-6d5f-4017-9600-bb3b856b8040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\HeaderFiles">
+      <UniqueIdentifier>{d4776cf5-25f9-41c6-8e4f-050977bdeb62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_ADCDriver.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\Diagnostics\Diagnostics.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Diagnostics.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_FreeRTOS.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_queue.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_CANODInterface.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Fakes\Fake_ADCDriver.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCDriver.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCMapping.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\FreeRTOS.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\task.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_FreeRTOS.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_queue.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\queue.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_CANODInterface.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Diagnostics\Sensors.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Diagnostics\Diagnostics.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

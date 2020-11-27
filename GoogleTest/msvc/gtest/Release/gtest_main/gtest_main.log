@@ -1,0 +1,13 @@
+﻿Build started 11/5/2015 8:23:44 PM.
+     1>Project "C:\Users\Pete\Desktop\gtest-1.7.0\gtest-1.7.0\msvc\gtest_main.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.. /I..\include /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _VARIADIC_MAX=10 /D _LIB /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"gtest/Release\gtest_main\\" /Fd"gtest/Release\gtest_main\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\gtest_main.cc
+         gtest_main.cc
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"gtest/Release\gtest_main.lib" /NOLOGO gtest/Release\gtest_main\gtest_main.obj
+         gtest_main.vcxproj -> C:\Users\Pete\Desktop\gtest-1.7.0\gtest-1.7.0\msvc\gtest/Release\gtest_main.lib
+     1>Done Building Project "C:\Users\Pete\Desktop\gtest-1.7.0\gtest-1.7.0\msvc\gtest_main.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.26

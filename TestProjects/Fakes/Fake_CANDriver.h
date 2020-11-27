@@ -1,0 +1,13 @@
+#ifndef _FAKE_TWO_WIRE_INTERFACE_H
+#define _FAKE_TWO_WIRE_INTERFACE_H
+
+#include "CANDriver.h"
+#include "fff.h"
+
+DECLARE_FAKE_VALUE_FUNC1(CAN_ERROR, ReceiveCAN, CAN_PACKET*);
+DECLARE_FAKE_VALUE_FUNC1(CAN_ERROR, TransmitCAN, CAN_PACKET);
+DECLARE_FAKE_VALUE_FUNC0(uint8_t, CANHasTransmitSpaceAvailable);
+DECLARE_FAKE_VALUE_FUNC2(CAN_ERROR, InitialiseCANDriver, uint16_t *, uint8_t);
+DECLARE_FAKE_VALUE_FUNC0(CAN_ERROR, ChangeCANChannel);
+
+#endif

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Fakes\Fake_TwoWireInterface.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\SatelliteOperations.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_SatelliteOperations.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_semphr.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_timers.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_CANObjectDictionary.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_CANODInterface.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\Untested\modulator\BitStream.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_FreeRTOS.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\WOD.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\DefaultValues.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_flashc.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_queue.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_gpio .c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\OperatingModes.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_Downlink.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_DACout.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_Watchdog.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Fakes\compiler.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_TwoWireInterface.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\SatelliteOperations.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\queue.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\flashc.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="power_clocks_lib.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_semphr.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\semphr.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_timers.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\timers.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\projdefs.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\CANOpen\CANObjectDictionary.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\CANOpen\CANODInterface.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_CANObjectDictionary.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_CANODInterface.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Untested\modulator\BitStream.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_FreeRTOS.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\task.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\WOD.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\DefaultValues.h">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_flashc.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_queue.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_gpio.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\SatelliteOperations\OperatingModes.h">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_Downlink.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_DACout.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="fakes">
+      <UniqueIdentifier>{234c5707-f078-4b93-a6a0-3a4fdca79333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles">
+      <UniqueIdentifier>{a8f7c459-7b31-420c-9aa3-9a05a0556443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT">
+      <UniqueIdentifier>{f8892fc9-ec82-4bc3-8fe9-a108b6812dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\SourceFiles">
+      <UniqueIdentifier>{b1db720f-a7bd-44e3-921a-28d092782a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\HeaderFiles">
+      <UniqueIdentifier>{272ee42f-6c6a-45c6-a102-8bae08baba52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\SourceFiles">
+      <UniqueIdentifier>{d8b104b3-3e04-4041-87e2-98c9d32f2f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\HeaderFiles">
+      <UniqueIdentifier>{6c395ecc-76cb-42e3-aeb9-422638472dce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

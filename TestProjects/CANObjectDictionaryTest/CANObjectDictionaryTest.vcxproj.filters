@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Test_CANObjectDictionary.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_CAN_PDO.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\CANOpen\CANObjectDictionary.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\CANOpen\ExtendedObjectDictionaryFields.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_FreeRTOS.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_semphr.c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="fakes">
+      <UniqueIdentifier>{9e07c7dd-64d6-4f84-a6c6-2ef021d288fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles">
+      <UniqueIdentifier>{82a6e8aa-a7bb-4867-a70d-78a43ca04746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\HeaderFiles">
+      <UniqueIdentifier>{9fc1470f-6e64-463f-bec6-9089d1ff1edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\SourceFiles">
+      <UniqueIdentifier>{c3a56e87-f864-4d67-90da-4ea75d5164de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT">
+      <UniqueIdentifier>{d985b31c-9649-4ed3-8e79-445b5f0d9d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\HeaderFiles">
+      <UniqueIdentifier>{7e4c0ef5-e426-458b-b3ee-a3f719604d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\SourceFiles">
+      <UniqueIdentifier>{eba02bf4-bc0d-4b26-a4ed-b7769ce763e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Fakes\Fake_CAN_PDO.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\CANOpen\CANObjectDictionary.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\CANOpen\CANODInterface.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\CANOpen\ExtendedObjectDictionaryFields.h">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_FreeRTOS.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_semphr.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\semphr.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

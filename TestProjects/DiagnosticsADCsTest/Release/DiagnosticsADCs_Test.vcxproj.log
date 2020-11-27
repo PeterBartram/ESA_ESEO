@@ -1,0 +1,202 @@
+﻿Build started 12/13/2015 12:57:24 PM.
+     1>Project "C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\DiagnosticsADCs_Test.vcxproj.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\..\ESEO_Project\src\Modules\ConfigurationFiles /I..\Fakes /I..\..\ESEO_Project\src\ASF\avr32\utils /I..\..\ESEO_Project\src\ASF\avr32\drivers\twim /I. /I..\..\ESEO_Project\src\Modules\Diagnostics /I..\..\FakeFunctionFramework /I..\..\GoogleTest /I..\..\GoogleTest\include /I..\..\ESEO_Project\src\Modules\DiagnosticsADCs /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D _VARIADIC_MAX=10 /D ARRAY_LEN=10 /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCDriver.c ..\Fakes\Fake_TwoWireInterface.c
+         ADCDriver.c
+         Fake_TwoWireInterface.c
+     1>C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\FakeFunctionFramework\fff.h(87): warning C4005: 'EXTERN_C' : macro redefinition
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\winnt.h(563) : see previous definition of 'EXTERN_C'
+     1>..\Fakes\Fake_TwoWireInterface.c(3): warning C4028: formal parameter 1 different from declaration
+     1>..\Fakes\Fake_TwoWireInterface.c(4): warning C4028: formal parameter 2 different from declaration
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\..\ESEO_Project\src\Modules\ConfigurationFiles /I..\Fakes /I..\..\ESEO_Project\src\ASF\avr32\utils /I..\..\ESEO_Project\src\ASF\avr32\drivers\twim /I. /I..\..\ESEO_Project\src\Modules\Diagnostics /I..\..\FakeFunctionFramework /I..\..\GoogleTest /I..\..\GoogleTest\include /I..\..\ESEO_Project\src\Modules\DiagnosticsADCs /Zi /nologo /W3 /WX- /Od /Oi /Oy- /GL /D _VARIADIC_MAX=10 /D ARRAY_LEN=10 /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Test_DiagnosticsADCs.cpp
+         main.cpp
+         Test_DiagnosticsADCs.cpp
+     1>C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\FakeFunctionFramework\fff.h(84): warning C4005: 'EXTERN_C' : macro redefinition
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\um\winnt.h(561) : see previous definition of 'EXTERN_C'
+     1>C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(318): warning C4800: 'volatile avr32_twim_t *' : forcing value to bool 'true' or 'false' (performance warning)
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(376) : see reference to function template instantiation 'void testing::internal::DefaultPrintTo<volatile avr32_twim_t>(testing::internal::IsNotContainer,testing::internal::true_type,T *,std::ostream *)' being compiled
+                 with
+                 [
+                     T=volatile avr32_twim_t
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(600) : see reference to function template instantiation 'void testing::internal::PrintTo<T>(const T &,std::ostream *)' being compiled
+                 with
+                 [
+                     T=T1
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(591) : while compiling class template member function 'void testing::internal::UniversalPrinter<T>::Print(const T &,std::ostream *)'
+                 with
+                 [
+                     T=T1
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(756) : see reference to function template instantiation 'void testing::internal::UniversalPrinter<T>::Print(const T &,std::ostream *)' being compiled
+                 with
+                 [
+                     T=T1
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(756) : see reference to class template instantiation 'testing::internal::UniversalPrinter<T>' being compiled
+                 with
+                 [
+                     T=T1
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(684) : see reference to function template instantiation 'void testing::internal::UniversalPrint<T>(const T &,std::ostream *)' being compiled
+                 with
+                 [
+                     T=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(683) : while compiling class template member function 'void testing::internal::UniversalTersePrinter<T>::Print(const T &,std::ostream *)'
+                 with
+                 [
+                     T=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(849) : see reference to function template instantiation 'void testing::internal::UniversalTersePrinter<T>::Print(const T &,std::ostream *)' being compiled
+                 with
+                 [
+                     T=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest-printers.h(849) : see reference to class template instantiation 'testing::internal::UniversalTersePrinter<T>' being compiled
+                 with
+                 [
+                     T=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1358) : see reference to function template instantiation 'std::string testing::PrintToString<ToPrint>(const T &)' being compiled
+                 with
+                 [
+                     ToPrint=volatile avr32_twim_t *,
+                     T=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1357) : while compiling class template member function 'std::string testing::internal::FormatForComparison<ToPrint,OtherOperand>::Format(const ToPrint &)'
+                 with
+                 [
+                     ToPrint=volatile avr32_twim_t *,
+                     OtherOperand=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1433) : see reference to function template instantiation 'std::string testing::internal::FormatForComparison<ToPrint,OtherOperand>::Format(const ToPrint &)' being compiled
+                 with
+                 [
+                     ToPrint=volatile avr32_twim_t *,
+                     OtherOperand=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1433) : see reference to class template instantiation 'testing::internal::FormatForComparison<ToPrint,OtherOperand>' being compiled
+                 with
+                 [
+                     ToPrint=volatile avr32_twim_t *,
+                     OtherOperand=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1458) : see reference to function template instantiation 'std::string testing::internal::FormatForComparisonFailureMessage<T1,T2>(const T1 &,const T2 &)' being compiled
+                 with
+                 [
+                     T1=volatile avr32_twim_t *,
+                     T2=volatile avr32_twim_t *
+                 ]
+                 C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\GoogleTest\include\gtest/gtest.h(1485) : see reference to function template instantiation 'testing::AssertionResult testing::internal::CmpHelperEQ<T1,T2>(const char *,const char *,const T1 &,const T2 &)' being compiled
+                 with
+                 [
+                     T1=volatile avr32_twim_t *,
+                     T2=volatile avr32_twim_t *
+                 ]
+                 Test_DiagnosticsADCs.cpp(124) : see reference to function template instantiation 'testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare<volatile avr32_twim_t*,volatile avr32_twim_t*>(const char *,const char *,const T1 &,const T2 &)' being compiled
+                 with
+                 [
+                     lhs_is_null_literal=false,
+                     T1=volatile avr32_twim_t *,
+                     T2=volatile avr32_twim_t *
+                 ]
+                 Test_DiagnosticsADCs.cpp(124) : see reference to function template instantiation 'testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare<volatile avr32_twim_t*,volatile avr32_twim_t*>(const char *,const char *,const T1 &,const T2 &)' being compiled
+                 with
+                 [
+                     lhs_is_null_literal=false,
+                     T1=volatile avr32_twim_t *,
+                     T2=volatile avr32_twim_t *
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\DiagnosticsADCsTest.exe" /NOLOGO /LIBPATH:..\..\GoogleTest\msvc\gtest\Release gtest.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\DiagnosticsADCsTest.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\DiagnosticsADCsTest.lib" /MACHINE:X86 /SAFESEH Release\ADCDriver.obj
+         Release\Fake_TwoWireInterface.obj
+         Release\main.obj
+         Release\Test_DiagnosticsADCs.obj
+         Generating code
+         Finished generating code
+     1>gtest.lib(gtest-all.obj) : warning LNK4204: 'C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\vc110.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         DiagnosticsADCs_Test.vcxproj.vcxproj -> C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\DiagnosticsADCsTest.exe
+       PostBuildEvent:
+         "C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\Release\DiagnosticsADCsTest.exe" --result_code=no --report_level=no
+         :VCEnd
+         [==========] Running 33 tests from 1 test case.
+         [----------] Global test environment set-up.
+         [----------] 33 tests from DiagnosticsADCs
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsErrorIfNoBufferPassedIn
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsErrorIfNoBufferPassedIn (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsErrorIfNoBufferSizePassedIn
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsErrorIfNoBufferSizePassedIn (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsOkWhenPassedTheCorrectBufferParameters
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnsOkWhenPassedTheCorrectBufferParameters (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCCalls_gpio_enable_module
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCCalls_gpio_enable_module (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCReturnsErrorIf_gpio_enable_module_fails
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCReturnsErrorIf_gpio_enable_module_fails (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_gpio_enable_module_the_TheCorrectI2CBus
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_gpio_enable_module_the_TheCorrectI2CBus (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_gpio_enable_module_WithTheCorrectSizeConfigurationStructure
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_gpio_enable_module_WithTheCorrectSizeConfigurationStructure (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_master_init
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_master_init (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIf_twim_master_init_returnsError
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIf_twim_master_init_returnsError (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectI2CModule
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectI2CModule (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimChipAddress
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimChipAddress (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimPBAClockSpeed
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimPBAClockSpeed (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectSMBusInitialisationValue
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectSMBusInitialisationValue (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimSpeed
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsPasses_twim_master_init_TheCorrectTwimSpeed (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCallsTwimWritePacketForReceiverADC
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCallsTwimWritePacketForReceiverADC (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnNoErrorIfTwimWritePacketIsSuccessful
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnNoErrorIfTwimWritePacketIsSuccessful (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketReturnsError
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketReturnsError (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC1
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC1 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC2
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC2 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC3
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectConfigurationDataForADC3 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketToSecondADCReturnsError
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketToSecondADCReturnsError (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketToThirdADCReturnsError
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsReturnErrorIfTwimWritePacketToThirdADCReturnsError (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectI2CBus
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_write_packet_WithCorrectI2CBus (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataCalls_twim_read_packet
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataCalls_twim_read_packet (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_fails
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_fails (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatADCReadReturnsNotInitialisedIfWeHaveUninitialised
+         [       OK ] DiagnosticsADCs.TestThatADCReadReturnsNotInitialisedIfWeHaveUninitialised (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_failsForSecondADC
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_failsForSecondADC (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_failsForThirdADC
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataReturnsErrorIf_twim_read_packet_failsForThirdADC (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC1
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC1 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC2
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC2 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC3
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsDataADCsCalls_twim_read_packetWithCorrectInputDataForADC3 (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_read_packet_WithCorrectI2CBus
+         [       OK ] DiagnosticsADCs.TestThatInitialiseDiagnosticsADCsCalls_twim_read_packet_WithCorrectI2CBus (0 ms)
+         [ RUN      ] DiagnosticsADCs.TestThatFetchDiagnosticsUpdatesAllOuptutDataFields
+         [       OK ] DiagnosticsADCs.TestThatFetchDiagnosticsUpdatesAllOuptutDataFields (0 ms)
+         [----------] 33 tests from DiagnosticsADCs (1 ms total)
+         
+         [----------] Global test environment tear-down
+         [==========] 33 tests from 1 test case ran. (1 ms total)
+         [  PASSED  ] 33 tests.
+     1>Done Building Project "C:\Users\Pete\Dropbox\ESEO\eseo-msc-project-development-branch\TestProjects\DiagnosticsADCs_Test\DiagnosticsADCs_Test.vcxproj.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.57

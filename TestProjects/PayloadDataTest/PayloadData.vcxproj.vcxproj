@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Diagnostics\Diagnostics.h" />
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\PayloadData\PayloadData.h" />
+    <ClInclude Include="..\Fakes\compiler.h" />
+    <ClInclude Include="..\Fakes\conf_twim.h" />
+    <ClInclude Include="..\Fakes\Fake_CANObjectDictionary.h" />
+    <ClInclude Include="..\Fakes\Fake_CANODInterface.h" />
+    <ClInclude Include="..\Fakes\Fake_flashc.h" />
+    <ClInclude Include="..\Fakes\Fake_gpio.h" />
+    <ClInclude Include="..\Fakes\Fake_queue.h" />
+    <ClInclude Include="..\Fakes\Fake_semphr.h" />
+    <ClInclude Include="..\Fakes\Fake_TwoWireInterface.h" />
+    <ClInclude Include="..\Fakes\flashc.h" />
+    <ClInclude Include="..\Fakes\queue.h" />
+    <ClInclude Include="..\Fakes\semphr.h" />
+    <ClInclude Include="power_clocks_lib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\PayloadData\PayloadData.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_CANObjectDictionary.c" />
+    <ClCompile Include="..\Fakes\Fake_flashc.c" />
+    <ClCompile Include="..\Fakes\Fake_gpio .c" />
+    <ClCompile Include="..\Fakes\Fake_queue.c" />
+    <ClCompile Include="..\Fakes\Fake_semphr.c" />
+    <ClCompile Include="..\Fakes\Fake_TwoWireInterface.c" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Test_PayloadData.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B233878D-E05E-46DF-9874-4AA0FE73BEA9}</ProjectGuid>
+    <RootNamespace>I2C_Test</RootNamespace>
+    <ProjectName>PayloadDataTest</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\ESEO_Project\src\Modules\PayloadData;..\..\ESEO_Project\src\Modules\CANDriver;..\..\ESEO_Project\src\Modules\CANOpen;..\..\ESEO_Project\src\ASF\common\boards;..\..\ESEO_Project\src\Modules\ConfigurationFiles;..\Fakes;..\..\ESEO_Project\src\ASF\avr32\utils;..\..\ESEO_Project\src\ASF\avr32\drivers\twim;.;..\..\ESEO_Project\src\Modules\Diagnostics;..\..\FakeFunctionFramework;..\..\GoogleTest;..\..\GoogleTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;ARRAY_LEN=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\GoogleTest\msvc\gtest\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;ARRAY_LEN=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\ESEO_Project\src\Modules\PayloadData;..\..\ESEO_Project\src\Modules\CANDriver;..\..\ESEO_Project\src\Modules\CANOpen;..\..\ESEO_Project\src\ASF\common\boards;..\..\ESEO_Project\src\Modules\ConfigurationFiles;..\Fakes;..\..\ESEO_Project\src\ASF\avr32\utils;..\..\ESEO_Project\src\ASF\avr32\drivers\twim;.;..\..\ESEO_Project\src\Modules\Diagnostics;..\..\FakeFunctionFramework;..\..\GoogleTest;..\..\GoogleTest\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\GoogleTest\msvc\gtest\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(ProjectDir)$(Configuration)\$(TargetName).exe" --result_code=no --report_level=no</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

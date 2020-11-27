@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fakes">
+      <UniqueIdentifier>{fabb7c00-cf66-46b2-9a75-9a15b82be380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT">
+      <UniqueIdentifier>{9848b7de-a6ae-4d22-a1dc-5ebceaa7f12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\SourceFiles">
+      <UniqueIdentifier>{ef3a5ffb-b310-4cd1-bcd6-1579d5b50884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUT\HeaderFiles">
+      <UniqueIdentifier>{cc2e2057-b97d-4aae-bf9b-0e89c09db0dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles">
+      <UniqueIdentifier>{6a83a622-4a01-450f-8ef1-799e371a2344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\SourceFiles">
+      <UniqueIdentifier>{3c9c7e63-f515-4d4c-bb48-6b19e40975e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFiles\HeaderFiles">
+      <UniqueIdentifier>{bd898506-d4d7-4ad1-8ee5-749ff1857d2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Fakes\conf_twim.h" />
+    <ClInclude Include="..\Fakes\Fake_TwoWireInterface.h">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCDriver.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCMapping.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Diagnostics\Diagnostics.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ESEO_Project\src\Modules\Diagnostics\Sensors.h">
+      <Filter>UUT\HeaderFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\compiler.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Fakes\Fake_gpio.h">
+      <Filter>fakes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_DiagnosticsADCs.cpp">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_TwoWireInterface.c">
+      <Filter>TestFiles\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ESEO_Project\src\Modules\DiagnosticsADCs\ADCDriver.c">
+      <Filter>UUT\SourceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Fakes\Fake_gpio .c">
+      <Filter>fakes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
